@@ -32,14 +32,21 @@ struct AerospaceSpacesWidget: View {
     }
 
     private var filteredWorkspaces: [AerospaceWorkspace] {
-        let monitorId = displayIndex + 1
         var workspaces: [AerospaceWorkspace]
 
         // Filter by monitor if not showing all spaces on all screens
         if spacesSettings.showAllSpacesOnAllScreens {
             workspaces = aerospaceService.state.workspaces
         } else {
-            workspaces = aerospaceService.state.workspaces(forMonitor: monitorId)
+            // Match by screen name to correctly map AeroSpace monitors to macOS screens,
+            // since AeroSpace monitor IDs don't necessarily follow NSScreen ordering.
+            let screens = NSScreen.screens
+            if screens.indices.contains(displayIndex),
+               let monitorId = aerospaceService.state.monitorId(forScreenName: screens[displayIndex].localizedName) {
+                workspaces = aerospaceService.state.workspaces(forMonitor: monitorId)
+            } else {
+                workspaces = aerospaceService.state.workspaces(forMonitor: displayIndex + 1)
+            }
         }
 
         // Apply exclusions

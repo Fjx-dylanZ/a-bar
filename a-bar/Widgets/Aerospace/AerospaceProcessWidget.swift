@@ -26,7 +26,17 @@ struct AerospaceProcessWidget: View {
 
         let state = aerospaceService.state
         let focusedWin = state.focusedWindow
-        let monitorId = displayIndex + 1
+
+        // Match by screen name to correctly map AeroSpace monitors to macOS screens,
+        // since AeroSpace monitor IDs don't necessarily follow NSScreen ordering.
+        let screens = NSScreen.screens
+        let monitorId: Int = {
+            if screens.indices.contains(displayIndex),
+               let id = state.monitorId(forScreenName: screens[displayIndex].localizedName) {
+                return id
+            }
+            return displayIndex + 1
+        }()
 
         let windowsOnCurrentSpace: [AerospaceWindow] = {
             if processSettings.showCurrentSpaceOnly {

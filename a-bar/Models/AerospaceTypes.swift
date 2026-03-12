@@ -146,6 +146,11 @@ struct AerospaceState: Equatable {
         return workspaces.filter { $0.monitorId == monitorId }
     }
 
+    /// Find the AeroSpace monitor ID that corresponds to a given screen name
+    func monitorId(forScreenName name: String) -> Int? {
+        return monitors.first { $0.monitorName == name }?.monitorId
+    }
+
     /// Get the currently focused workspace
     var focusedWorkspace: AerospaceWorkspace? {
         return workspaces.first { $0.isFocused }
