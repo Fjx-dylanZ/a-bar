@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="space-bar Terminology">
+    <suite name="space-bar Suite" code="SBrS" description="Commands for controlling space-bar">
+        <command name="refresh" code="SBrSRfrW"
+            description="Refresh workspace data from the window manager">
+            <cocoa class="SpaceBarRefreshCommand" />
+            <result type="text" description="Success message" />
+        </command>
+    </suite>
+</dictionary>

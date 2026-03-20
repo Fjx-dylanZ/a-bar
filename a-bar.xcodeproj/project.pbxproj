@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3BF6B0744BDEDA946F14D6 /* WorkspaceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCE7265F6DC5E32060DC57 /* WorkspaceStore.swift */; };
 		0F3AA90F2F392ED300554810 /* HackerNewsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3AA90E2F392ED300554810 /* HackerNewsWidget.swift */; };
 		0F5602482F33707500BBEA53 /* DiskActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5602472F33707500BBEA53 /* DiskActivityWidget.swift */; };
 		0F56024A2F338BF200BBEA53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5602492F338BF200BBEA53 /* Profile.swift */; };
 		0FEC2C322F2E59FE00CDA90B /* StorageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC2C312F2E59FE00CDA90B /* StorageWidget.swift */; };
-		C1000001 /* AerospaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* AerospaceTypes.swift */; };
-		C1000002 /* AerospaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000002 /* AerospaceService.swift */; };
-		C1000003 /* AerospaceSpacesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000003 /* AerospaceSpacesWidget.swift */; };
-		C1000004 /* AerospaceSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000004 /* AerospaceSpaceView.swift */; };
-		C1000005 /* AerospaceOpenedAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000005 /* AerospaceOpenedAppsView.swift */; };
-		C1000006 /* AerospaceProcessWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000006 /* AerospaceProcessWidget.swift */; };
+		16465C603779C6AC81381F27 /* SpaceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DF4EB3340D2AF664E13B3 /* SpaceItemView.swift */; };
+		1A7B4278E07190F22E77ECEF /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD14DB1210F4EEA6A4B4EAA /* StatusBarController.swift */; };
+		38C5624C2AE30DF08A5A6C75 /* RefreshCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D091EF7707A88F3EAAE862 /* RefreshCommand.swift */; };
+		44FC92226673D1B23EF3B0E4 /* ShellExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2C8AB40C1C800684BBE94 /* ShellExecutor.swift */; };
+		45761AE3F0407D0ABD2CA86E /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA5294F6AC2F6EF74DBCF2 /* SettingsWindowController.swift */; };
+		5002B1DCC00E2815F60E49E1 /* WorkspaceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE3CC9EBBDCC9B4BD7534A /* WorkspaceProvider.swift */; };
+		57BD42F2009887D9853E60D7 /* AppIconProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE6F7A7BFD21B42AD87ACE /* AppIconProvider.swift */; };
+		7F7540833EEFA7FB89EFF6C2 /* SpaceBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3114BFF8CC7B6D8AB9E60D9 /* SpaceBarApp.swift */; };
+		8B28B24BD3C2267405A6A0DE /* WorkspaceBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873A28B716A527D395B017B /* WorkspaceBarView.swift */; };
+		93EBBBBE26FAD7F66F5F82BB /* WorkspaceRefreshCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD5405954B0E9A98E60B2C3 /* WorkspaceRefreshCoordinator.swift */; };
+		972EFE6BB9CEFAAF7CB3839D /* YabaiWorkspaceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264BF3519D7B179B58E4972 /* YabaiWorkspaceProvider.swift */; };
 		A1000001 /* ABarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000001 /* ABarApp.swift */; };
 		A1000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000002 /* AppDelegate.swift */; };
 		A1000003 /* BarWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000003 /* BarWindow.swift */; };
@@ -58,7 +64,18 @@
 		A1000083 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000083 /* Extensions.swift */; };
 		A1000084 /* RefreshWidgetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000084 /* RefreshWidgetCommand.swift */; };
 		A1000090 /* sfsymbols.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1000012 /* sfsymbols.txt */; };
+		AFFFBEEBB268E9392B2FF53D /* space-bar.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 6629DB6F347263DA75565536 /* space-bar.sdef */; };
+		BF8680AB04685EAFE3A0BEB8 /* SpaceBarSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14DE0F7971145B293D25D81 /* SpaceBarSettingsView.swift */; };
+		C1000001 /* AerospaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* AerospaceTypes.swift */; };
+		C1000002 /* AerospaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000002 /* AerospaceService.swift */; };
+		C1000003 /* AerospaceSpacesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000003 /* AerospaceSpacesWidget.swift */; };
+		C1000004 /* AerospaceSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000004 /* AerospaceSpaceView.swift */; };
+		C1000005 /* AerospaceOpenedAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000005 /* AerospaceOpenedAppsView.swift */; };
+		C1000006 /* AerospaceProcessWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000006 /* AerospaceProcessWidget.swift */; };
+		D5E71B811A55C2B4543BF299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5851C83C71AC9E52DD97C /* AppDelegate.swift */; };
+		D9286B463BACD317A655B13E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CCB10EE2B33BB0993F9E1 /* Cocoa.framework */; };
 		E1000014 /* a-bar.sdef in Resources */ = {isa = PBXBuildFile; fileRef = E1000013 /* a-bar.sdef */; };
+		F713C9BE2DC5E531EC7C062A /* SpaceAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C36A9C009B04A6A2B712C0 /* SpaceAppIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,12 +83,17 @@
 		0F5602472F33707500BBEA53 /* DiskActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskActivityWidget.swift; sourceTree = "<group>"; };
 		0F5602492F338BF200BBEA53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		0FEC2C312F2E59FE00CDA90B /* StorageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageWidget.swift; sourceTree = "<group>"; };
-		C2000001 /* AerospaceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceTypes.swift; sourceTree = "<group>"; };
-		C2000002 /* AerospaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceService.swift; sourceTree = "<group>"; };
-		C2000003 /* AerospaceSpacesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceSpacesWidget.swift; sourceTree = "<group>"; };
-		C2000004 /* AerospaceSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceSpaceView.swift; sourceTree = "<group>"; };
-		C2000005 /* AerospaceOpenedAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceOpenedAppsView.swift; sourceTree = "<group>"; };
-		C2000006 /* AerospaceProcessWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceProcessWidget.swift; sourceTree = "<group>"; };
+		16EAE0E3F8666963528E04C6 /* space-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "space-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5CCB10EE2B33BB0993F9E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		3873A28B716A527D395B017B /* WorkspaceBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkspaceBarView.swift; sourceTree = "<group>"; };
+		3C0DF4EB3340D2AF664E13B3 /* SpaceItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpaceItemView.swift; sourceTree = "<group>"; };
+		6629DB6F347263DA75565536 /* space-bar.sdef */ = {isa = PBXFileReference; includeInIndex = 1; path = "space-bar.sdef"; sourceTree = "<group>"; };
+		70D091EF7707A88F3EAAE862 /* RefreshCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RefreshCommand.swift; sourceTree = "<group>"; };
+		7DD5851C83C71AC9E52DD97C /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EDA5294F6AC2F6EF74DBCF2 /* SettingsWindowController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsWindowController.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		81BE3CC9EBBDCC9B4BD7534A /* WorkspaceProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkspaceProvider.swift; sourceTree = "<group>"; };
+		9EDCE7265F6DC5E32060DC57 /* WorkspaceStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkspaceStore.swift; sourceTree = "<group>"; };
+		9FA2C8AB40C1C800684BBE94 /* ShellExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
 		B1000001 /* ABarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABarApp.swift; sourceTree = "<group>"; };
 		B1000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1000003 /* BarWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarWindow.swift; sourceTree = "<group>"; };
@@ -112,11 +134,25 @@
 		B1000082 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B1000083 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B1000084 /* RefreshWidgetCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshWidgetCommand.swift; sourceTree = "<group>"; };
+		C2000001 /* AerospaceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceTypes.swift; sourceTree = "<group>"; };
+		C2000002 /* AerospaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceService.swift; sourceTree = "<group>"; };
+		C2000003 /* AerospaceSpacesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceSpacesWidget.swift; sourceTree = "<group>"; };
+		C2000004 /* AerospaceSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceSpaceView.swift; sourceTree = "<group>"; };
+		C2000005 /* AerospaceOpenedAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceOpenedAppsView.swift; sourceTree = "<group>"; };
+		C2000006 /* AerospaceProcessWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerospaceProcessWidget.swift; sourceTree = "<group>"; };
+		C264BF3519D7B179B58E4972 /* YabaiWorkspaceProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YabaiWorkspaceProvider.swift; sourceTree = "<group>"; };
+		C3114BFF8CC7B6D8AB9E60D9 /* SpaceBarApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpaceBarApp.swift; sourceTree = "<group>"; };
+		D0C36A9C009B04A6A2B712C0 /* SpaceAppIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpaceAppIconView.swift; sourceTree = "<group>"; };
 		D1000001 /* a-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "a-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EE6F7A7BFD21B42AD87ACE /* AppIconProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIconProvider.swift; sourceTree = "<group>"; };
 		E1000010 /* a-bar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "a-bar.entitlements"; sourceTree = "<group>"; };
 		E1000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1000012 /* sfsymbols.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sfsymbols.txt; sourceTree = "<group>"; };
 		E1000013 /* a-bar.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "a-bar.sdef"; sourceTree = "<group>"; };
+		EAD5405954B0E9A98E60B2C3 /* WorkspaceRefreshCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkspaceRefreshCoordinator.swift; sourceTree = "<group>"; };
+		F14DE0F7971145B293D25D81 /* SpaceBarSettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpaceBarSettingsView.swift; sourceTree = "<group>"; };
+		F57776120FC5970C55C22371 /* space-bar.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = "space-bar.entitlements"; sourceTree = "<group>"; };
+		FCD14DB1210F4EEA6A4B4EAA /* StatusBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,14 +163,110 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F26A4AA0B57F506FF8845C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9286B463BACD317A655B13E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431D7BA26D23FBB4F2C1956E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				2B5CCB10EE2B33BB0993F9E1 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		5C99A7553990496A350A6484 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				70D091EF7707A88F3EAAE862 /* RefreshCommand.swift */,
+			);
+			name = Commands;
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		6BD3086A4E6227B693DBC72A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0C36A9C009B04A6A2B712C0 /* SpaceAppIconView.swift */,
+				F14DE0F7971145B293D25D81 /* SpaceBarSettingsView.swift */,
+				3C0DF4EB3340D2AF664E13B3 /* SpaceItemView.swift */,
+				3873A28B716A527D395B017B /* WorkspaceBarView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71F25E57DF89BEE19BB45652 /* space-bar */ = {
+			isa = PBXGroup;
+			children = (
+				9EDE4E1C51F649C49D2D93B4 /* Protocols */,
+				7899213F71D088544162BBF1 /* Providers */,
+				B494563D3939DFF712D2993C /* Store */,
+				6BD3086A4E6227B693DBC72A /* Views */,
+				5C99A7553990496A350A6484 /* Commands */,
+				7DD5851C83C71AC9E52DD97C /* AppDelegate.swift */,
+				D7EE6F7A7BFD21B42AD87ACE /* AppIconProvider.swift */,
+				9FA2C8AB40C1C800684BBE94 /* ShellExecutor.swift */,
+				C3114BFF8CC7B6D8AB9E60D9 /* SpaceBarApp.swift */,
+				FCD14DB1210F4EEA6A4B4EAA /* StatusBarController.swift */,
+				6629DB6F347263DA75565536 /* space-bar.sdef */,
+				F57776120FC5970C55C22371 /* space-bar.entitlements */,
+				7EDA5294F6AC2F6EF74DBCF2 /* SettingsWindowController.swift */,
+			);
+			name = "space-bar";
+			path = "space-bar";
+			sourceTree = "<group>";
+		};
+		7899213F71D088544162BBF1 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				C264BF3519D7B179B58E4972 /* YabaiWorkspaceProvider.swift */,
+			);
+			name = Providers;
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		9EDE4E1C51F649C49D2D93B4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				81BE3CC9EBBDCC9B4BD7534A /* WorkspaceProvider.swift */,
+			);
+			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B494563D3939DFF712D2993C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5405954B0E9A98E60B2C3 /* WorkspaceRefreshCoordinator.swift */,
+				9EDCE7265F6DC5E32060DC57 /* WorkspaceStore.swift */,
+			);
+			name = Store;
+			path = Store;
+			sourceTree = "<group>";
+		};
+		D4F4ACC7B26C8DA36E668302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				431D7BA26D23FBB4F2C1956E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		G1000001 = {
 			isa = PBXGroup;
 			children = (
 				G1000002 /* a-bar */,
 				G1000100 /* Products */,
+				D4F4ACC7B26C8DA36E668302 /* Frameworks */,
+				71F25E57DF89BEE19BB45652 /* space-bar */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,17 +327,6 @@
 			path = Widgets;
 			sourceTree = "<group>";
 		};
-		G1000005E /* Aerospace */ = {
-			isa = PBXGroup;
-			children = (
-				C2000003 /* AerospaceSpacesWidget.swift */,
-				C2000004 /* AerospaceSpaceView.swift */,
-				C2000005 /* AerospaceOpenedAppsView.swift */,
-				C2000006 /* AerospaceProcessWidget.swift */,
-			);
-			path = Aerospace;
-			sourceTree = "<group>";
-		};
 		G1000005A /* Yabai */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +377,17 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		G1000005E /* Aerospace */ = {
+			isa = PBXGroup;
+			children = (
+				C2000003 /* AerospaceSpacesWidget.swift */,
+				C2000004 /* AerospaceSpaceView.swift */,
+				C2000005 /* AerospaceOpenedAppsView.swift */,
+				C2000006 /* AerospaceProcessWidget.swift */,
+			);
+			path = Aerospace;
+			sourceTree = "<group>";
+		};
 		G1000006 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				D1000001 /* a-bar.app */,
+				16EAE0E3F8666963528E04C6 /* space-bar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,6 +439,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9E70B0E8BD500304449F91CA /* space-bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94BD6BE9C45C6863E6E7072 /* Build configuration list for PBXNativeTarget "space-bar" */;
+			buildPhases = (
+				3A025E8BD47D007DCE5F7039 /* Sources */,
+				F26A4AA0B57F506FF8845C71 /* Frameworks */,
+				B5314BB1381F75B720DEFD6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "space-bar";
+			productName = "space-bar";
+			productReference = 16EAE0E3F8666963528E04C6 /* space-bar.app */;
+			productType = "com.apple.product-type.application";
+		};
 		T1000001 /* a-bar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = X1000001 /* Build configuration list for PBXNativeTarget "a-bar" */;
@@ -352,11 +502,20 @@
 			projectRoot = "";
 			targets = (
 				T1000001 /* a-bar */,
+				9E70B0E8BD500304449F91CA /* space-bar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B5314BB1381F75B720DEFD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFFBEEBB268E9392B2FF53D /* space-bar.sdef in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		R1000001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +529,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A025E8BD47D007DCE5F7039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E71B811A55C2B4543BF299 /* AppDelegate.swift in Sources */,
+				57BD42F2009887D9853E60D7 /* AppIconProvider.swift in Sources */,
+				44FC92226673D1B23EF3B0E4 /* ShellExecutor.swift in Sources */,
+				7F7540833EEFA7FB89EFF6C2 /* SpaceBarApp.swift in Sources */,
+				1A7B4278E07190F22E77ECEF /* StatusBarController.swift in Sources */,
+				5002B1DCC00E2815F60E49E1 /* WorkspaceProvider.swift in Sources */,
+				972EFE6BB9CEFAAF7CB3839D /* YabaiWorkspaceProvider.swift in Sources */,
+				93EBBBBE26FAD7F66F5F82BB /* WorkspaceRefreshCoordinator.swift in Sources */,
+				0E3BF6B0744BDEDA946F14D6 /* WorkspaceStore.swift in Sources */,
+				F713C9BE2DC5E531EC7C062A /* SpaceAppIconView.swift in Sources */,
+				BF8680AB04685EAFE3A0BEB8 /* SpaceBarSettingsView.swift in Sources */,
+				16465C603779C6AC81381F27 /* SpaceItemView.swift in Sources */,
+				8B28B24BD3C2267405A6A0DE /* WorkspaceBarView.swift in Sources */,
+				38C5624C2AE30DF08A5A6C75 /* RefreshCommand.swift in Sources */,
+				45761AE3F0407D0ABD2CA86E /* SettingsWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		S1000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +610,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0C3204F5252B8B8236CDC413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "space-bar/space-bar.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "space-bar needs Apple Events to receive refresh signals from yabai.";
+				INFOPLIST_KEY_NSAppleScriptEnabled = YES;
+				INFOPLIST_KEY_OSAScriptingDefinition = "space-bar.sdef";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeantinland.space-bar";
+				PRODUCT_NAME = "space-bar";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4C3813C49C65EFA35F97B4CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "space-bar/space-bar.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "space-bar needs Apple Events to receive refresh signals from yabai.";
+				INFOPLIST_KEY_NSAppleScriptEnabled = YES;
+				INFOPLIST_KEY_OSAScriptingDefinition = "space-bar.sdef";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeantinland.space-bar";
+				PRODUCT_NAME = "space-bar";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 		Y0000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -614,6 +849,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A94BD6BE9C45C6863E6E7072 /* Build configuration list for PBXNativeTarget "space-bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3204F5252B8B8236CDC413 /* Release */,
+				4C3813C49C65EFA35F97B4CE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		X0000001 /* Build configuration list for PBXProject "a-bar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
