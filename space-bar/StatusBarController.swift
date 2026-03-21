@@ -2,11 +2,9 @@ import AppKit
 import SwiftUI
 import Combine
 
-// MARK: - Right-click container
+// MARK: - Hosting view with right-click support
 
-/// Transparent NSView that intercepts right-click to show the context menu,
-/// letting left-click pass through to the SwiftUI content below.
-private final class RightClickContainerView: NSView {
+private final class SpaceBarHostingView: NSHostingView<AnyView> {
     var onRightClick: (() -> Void)?
 
     override func rightMouseDown(with event: NSEvent) {
@@ -19,7 +17,7 @@ private final class RightClickContainerView: NSView {
 @MainActor
 final class StatusBarController {
     private var statusItem: NSStatusItem?
-    private var hostingView: NSHostingView<AnyView>?
+    private var hostingView: SpaceBarHostingView?
     private let store: WorkspaceStore
     private var cancellables = Set<AnyCancellable>()
 
@@ -50,13 +48,9 @@ final class StatusBarController {
         let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
         let content = WorkspaceBarView().environmentObject(store)
-        let hosting = NSHostingView(rootView: AnyView(content))
+        let hosting = SpaceBarHostingView(rootView: AnyView(content))
         hosting.translatesAutoresizingMaskIntoConstraints = false
-
-        // Overlay that captures right-click without blocking left-click hit-testing
-        let overlay = RightClickContainerView()
-        overlay.translatesAutoresizingMaskIntoConstraints = false
-        overlay.onRightClick = { [weak self, weak item] in
+        hosting.onRightClick = { [weak self, weak item] in
             self?.showContextMenu(for: item)
         }
 
@@ -64,16 +58,11 @@ final class StatusBarController {
             button.image = nil
             button.title = ""
             button.addSubview(hosting)
-            button.addSubview(overlay)
             NSLayoutConstraint.activate([
                 hosting.topAnchor.constraint(equalTo: button.topAnchor),
                 hosting.bottomAnchor.constraint(equalTo: button.bottomAnchor),
                 hosting.leadingAnchor.constraint(equalTo: button.leadingAnchor),
                 hosting.trailingAnchor.constraint(equalTo: button.trailingAnchor),
-                overlay.topAnchor.constraint(equalTo: button.topAnchor),
-                overlay.bottomAnchor.constraint(equalTo: button.bottomAnchor),
-                overlay.leadingAnchor.constraint(equalTo: button.leadingAnchor),
-                overlay.trailingAnchor.constraint(equalTo: button.trailingAnchor),
             ])
         }
 

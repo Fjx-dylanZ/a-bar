@@ -75,6 +75,7 @@
 		D5E71B811A55C2B4543BF299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5851C83C71AC9E52DD97C /* AppDelegate.swift */; };
 		D9286B463BACD317A655B13E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CCB10EE2B33BB0993F9E1 /* Cocoa.framework */; };
 		E1000014 /* a-bar.sdef in Resources */ = {isa = PBXBuildFile; fileRef = E1000013 /* a-bar.sdef */; };
+		F3D91CB2BAEB6B5D81888A19 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52802BEE1EB7B36E793942ED /* ServiceManagement.framework */; };
 		F713C9BE2DC5E531EC7C062A /* SpaceAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C36A9C009B04A6A2B712C0 /* SpaceAppIconView.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		2B5CCB10EE2B33BB0993F9E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		3873A28B716A527D395B017B /* WorkspaceBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkspaceBarView.swift; sourceTree = "<group>"; };
 		3C0DF4EB3340D2AF664E13B3 /* SpaceItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpaceItemView.swift; sourceTree = "<group>"; };
+		52802BEE1EB7B36E793942ED /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		6629DB6F347263DA75565536 /* space-bar.sdef */ = {isa = PBXFileReference; includeInIndex = 1; path = "space-bar.sdef"; sourceTree = "<group>"; };
 		70D091EF7707A88F3EAAE862 /* RefreshCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RefreshCommand.swift; sourceTree = "<group>"; };
 		7DD5851C83C71AC9E52DD97C /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9286B463BACD317A655B13E /* Cocoa.framework in Frameworks */,
+				F3D91CB2BAEB6B5D81888A19 /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				431D7BA26D23FBB4F2C1956E /* OS X */,
+				52802BEE1EB7B36E793942ED /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

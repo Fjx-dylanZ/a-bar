@@ -4,7 +4,7 @@ struct WorkspaceBarView: View {
     @EnvironmentObject var store: WorkspaceStore
 
     var body: some View {
-        HStack(spacing: 4) {
+        HStack(spacing: 6) {
             ForEach(store.spaces) { space in
                 SpaceItemView(space: space)
             }

@@ -6,26 +6,26 @@ struct SpaceItemView: View {
     @State private var isHovered = false
 
     var body: some View {
-        HStack(spacing: 3) {
+        HStack(spacing: 5) {
             Text("\(space.index)")
-                .font(.system(size: 11, weight: space.hasFocus ? .semibold : .regular))
+                .font(.system(size: 13, weight: space.hasFocus ? .semibold : .regular))
                 .foregroundStyle(labelColor)
                 .lineLimit(1)
 
             let apps = store.uniqueApps(forSpaceIndex: space.index)
             if !apps.isEmpty {
-                HStack(spacing: 1) {
+                HStack(spacing: 2) {
                     ForEach(apps.prefix(5), id: \.id) { window in
-                        SpaceAppIconView(appName: window.app, size: 13)
+                        SpaceAppIconView(appName: window.app, size: 16)
                             .opacity(window.hasFocus ? 1.0 : 0.65)
                     }
                 }
             }
         }
-        .padding(.horizontal, 6)
-        .padding(.vertical, 3)
+        .padding(.horizontal, 8)
+        .padding(.vertical, 4)
         .background(capsuleBackground)
-        .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
+        .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
         .onTapGesture { store.switchToSpace(index: space.index) }
         .onHover { hovering in
             withAnimation(.easeInOut(duration: 0.15)) { isHovered = hovering }
